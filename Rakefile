@@ -1,4 +1,5 @@
 
+require 'rubygems'
 require 'echoe'
 
 Echoe.new("has_many_polymorphs") do |p|  
