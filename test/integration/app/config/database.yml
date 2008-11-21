@@ -1,10 +1,15 @@
-
 defaults: &defaults
-  adapter: <%= ENV['DB'] || 'mysql' %>
-  host: localhost
-  database: hmp_development
-  username: root
-  password:
+
+#  adapter: <%= ENV['DB'] || 'mysql' %>
+#  host: localhost
+#  database: hmp_development
+#  username: root
+#  password:
+
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 
 development:
   <<: *defaults
